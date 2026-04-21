@@ -19,21 +19,24 @@ To Develop a python program to Plot a time series data (population/ market price
 from matplotlib import pyplot as plt
 import pandas as pd
 import seaborn as sns
-df=pd.read_csv("sales.csv")
+
+df=pd.read_csv("customer.csv")
 df.head()
-plt.title('Sales prediction')
-plt.xlabel('Sales')
-plt.ylabel('Density')
-sns.kdeplot(df['Sales'])
-plt.grid()
-plt.show()
+
+plt.figure(figsize=(12,6))
+plt.title("Salary Increase Chart ")
+plt.title('Salary Prediction')
+plt.xlabel('Salary')
+plt.ylabel('Employee ID')
+sns.lineplot(x=df.id,y=df.Income)
 ```
 
 
 
 # OUTPUT:
 
-<img width="576" height="453" alt="download" src="https://github.com/user-attachments/assets/149dc1d7-283f-47ab-8223-422b22e5ae13" />
+<img width="1005" height="545" alt="download" src="https://github.com/user-attachments/assets/2059c887-2f4c-4a6e-bfaa-a5ef73d2160b" />
+
 
 
 
